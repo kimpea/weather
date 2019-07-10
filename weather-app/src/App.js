@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav.js';
 import Form from './components/Form.js';
+import Weather from './components/Weather.js';
 
 const API_KEY = "72252411f46e35933d6dc0f49e2762ca";
 
@@ -46,6 +47,14 @@ class App extends React.Component {
         <div className="container">
           <div className="jumbotron">
             <Form getWeather={this.getWeather}/>
+            <Weather 
+              temperature={this.state.temperature}
+              city={this.state.city}
+              country={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              error={this.state.error} 
+            />
           </div>
         </div>
       </div>
