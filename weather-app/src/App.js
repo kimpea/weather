@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './components/Nav.js';
 
 const API_KEY = "72252411f46e35933d6dc0f49e2762ca";
 
@@ -40,7 +41,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
+        <Nav />
       </div>
     );
   }
