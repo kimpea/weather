@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './components/Nav.js';
+import Form from './components/Form.js';
 
 const API_KEY = "72252411f46e35933d6dc0f49e2762ca";
 
@@ -42,6 +43,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav />
+        <div className="container">
+          <div className="jumbotron">
+            <Form getWeather={this.getWeather}/>
+          </div>
+        </div>
       </div>
     );
   }
